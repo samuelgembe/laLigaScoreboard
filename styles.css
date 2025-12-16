@@ -1,0 +1,150 @@
+:root{
+    --black: #4A4A4A;
+    --primary-color: #8EE500;
+    --primary-color-400: #DCF27E;
+    --primary-color-700: #C0DE42;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.ph-plus, .ph-minus{
+    font-size: 20px;
+}
+
+.ph-soccer-ball{
+    font-size: 52px;
+}
+
+#main-logo-wrapper{
+    width: 284px;
+    margin: 32px auto 32px auto;
+}
+
+#logo {
+    width: 100%;
+}
+
+#scoreboard-container{
+    background-color: white;
+    display: flex;
+    max-width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 24px;
+    padding: 64px 32px;
+    /* https://smoothshadows.com/#djEsMiw1LDAuMDgsMjQsMzIsMCwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+    /* https://smoothshadows.com/#djEsMSw1LDAuMDgsMjQsMzIsMCwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
+    0px 5px 4px rgba(3, 7, 18, 0.03),
+    0px 12px 9px rgba(3, 7, 18, 0.05),
+    0px 20px 15px rgba(3, 7, 18, 0.06),
+    0px 32px 24px rgba(3, 7, 18, 0.08);
+}
+
+.badge-wrapper{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+}
+
+.badge-img{
+    height: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    text-align: center;
+    gap: 64px;
+}
+
+.team-name{
+    font-family: 'Geom', sans-serif;
+    font-size: 32px;
+    color: var(--black);
+    font-weight: 400;
+}
+
+#scoreboard{
+    display: flex;
+    color: var(--black);
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    gap: 16px;
+}
+
+.score{
+    font-family: 'Orbitron', sans-serif;
+    color: var(--black);
+    font-size: 80px;
+}
+
+.team-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#new-game{
+    font-family: 'Geom',sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--black);
+    margin: 40px auto;
+    display: block;
+    border: 2px solid var(--primary-color-400);
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 12px;
+    min-width: 200px;
+}
+
+#new-game:hover{
+    background-color: var(--primary-color-400);
+    border: 2px solid white;
+}
+
+#new-game:active{
+    background-color: var(--primary-color-700);
+    border: 2px solid white;
+}
+
+.control{
+    display: flex;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color-400);
+}
+
+.control:hover{
+    background-color: var(--primary-color-400);
+    border: 2px solid white;
+
+}
+
+.control:active{
+    background-color: var(--primary-color-700);
+}

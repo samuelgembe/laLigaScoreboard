@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scoreboard La Liga</title>
+</head>
+<body>
+
+    <div id="main-logo-wrapper">
+        <img id="logo" src="./img/laligalogo.png" alt="La Liga Logo">
+    </div>
+
+    <div id="scoreboard-container">
+
+        <div class="card team-a">
+            <div class="team-info">
+                <div class="badge-wrapper">
+                    <img class="badge-img" src="./img/realMadrid.png" alt="Real Madrid badge">
+                </div>
+                <h2 class="team-name">Real Madrid</h2>
+            </div>
+
+            <div class="controls">
+                <button class="control" id="minus-team-a" onclick="subGoalA()">
+                    <i class="ph ph-minus"></i>
+                </button>
+
+                <div class="soccer-ball-icon">
+                    <i class="ph ph-soccer-ball"></i>
+                </div>
+                    
+                <button class="control" id="plus-team-a" onclick="sumGoalA()">
+                    <i class="ph ph-plus"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="scoreboard">
+            <h1 id="score-team-a-el" class="score">0</h1>
+            <h1 class="score">-</h1>
+            <h1 id="score-team-b-el" class="score">0</h1>
+        </div>
+
+        <div class="card team-b">
+            <div class="team-info">
+                <div class="badge-wrapper">
+                    <img class="badge-img" src="./img/barcelona.png" alt="Real Madrid badge">
+                </div>
+                <h2 class="team-name">Barcelona</h2>
+            </div>
+
+            <div class="controls">
+                <button class="control" id="minus-team-b" onclick="subGoalB()">
+                    <i class="ph ph-minus"></i>
+                </button>
+
+                <div class="soccer-ball-icon">
+                    <i class="ph ph-soccer-ball"></i>
+                </div>
+                    
+                <button class="control" id="plus-team-b" onclick="sumGoalB()">
+                    <i class="ph ph-plus"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="new-game" onclick="newGame()">New Game</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
