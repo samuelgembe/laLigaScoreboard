@@ -23,14 +23,24 @@ function sumGoalB() {
 }
 
 function subGoalA() {
-    scoreA -= 1
-    scoreTeamAel.textContent = scoreA
+    if (scoreA <= 0) {
+        scoreA = 0
+        scoreTeamAel.textContent = scoreA
+    } else {
+        scoreA -= 1
+        scoreTeamAel.textContent = scoreA
+    }
     compareWinner();
 }
 
 function subGoalB() {
-    scoreB -= 1
-    scoreTeamBel.textContent = scoreB
+    if (scoreB <= 0) {
+        scoreB = 0
+        scoreTeamBel.textContent = scoreB
+    } else {
+        scoreB -= 1
+        scoreTeamBel.textContent = scoreB
+    }
     compareWinner();
 }
 
